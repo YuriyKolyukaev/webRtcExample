@@ -265,9 +265,6 @@ public class ConnectActivity extends Activity {
     }
 
     String[] missingPermissions = getMissingPermissions();
-    Log.d("KOLUS1", "ConnectActivity requestPermissions: missingPermissions = "
-            + missingPermissions[0] + " " + missingPermissions[1] + " " + missingPermissions[2]
-            + " " + missingPermissions[3]);
     if (missingPermissions.length != 0) {
       requestPermissions(missingPermissions, PERMISSION_REQUEST);
     } else {
